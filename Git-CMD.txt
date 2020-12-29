@@ -1,0 +1,12 @@
+$touch .git ignore  // The files which are doesn't need to upload are kept in ".git" folder.
+$git config --global user.name Karan Ranbhor
+$git config --global user.email "karan.ranbhor@gmail.com"
+$get init // initializing git repository
+$git add . // All files comes in staging mode except ".git"
+$git commit -m "Initial Commit" // All files are ready to commit
+$git status // Just to check all the files are committed or not
+// Generating SSH key to provide access:
+$ ssh-keygen -t rsa -b 4096 -C "karan.ranbhor@gmail.com"
+// After getting the SSH key paste in the SSH and GPG key section in the setting
+$git remote add origin <paste the SSH link>
+$git push origin master 
